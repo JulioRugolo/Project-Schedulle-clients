@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Header from '../Components/Header';
 
 const url = 'http://localhost:4000';
 
@@ -24,6 +25,8 @@ const Home = () => {
         fetchUser()
     }, []);
     return (
+        <>
+        <Header />
         <div>
             <h1 className='text-4xl font-bold text-center text-white-800'>
             Home
@@ -33,6 +36,7 @@ const Home = () => {
             className='text-2xl font-bold text-center text-white-800'>
             Bem vindo {user}!</h2>}
         </div>
+        </>
     )
 };
 

@@ -31,7 +31,7 @@ const Login = () => {
         event.preventDefault();
         try {
             const response = await axios.post(`${url}/auth/signin`, userData);
-            location.href = '/home';
+            location.href = '/agenda';
             const { token } = response.data;
             localStorage.setItem('token', token);
             console.log(response.data);
@@ -81,7 +81,12 @@ const Login = () => {
             <button className='w-full px-4 py-3 mt-5 text-lg font-medium text-white uppercase bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700'>
             Login
             </button>
-
+            <p className='mt-4 text-center'>
+            Não tem uma conta?{' '}
+            <a href='/register' className='font-medium text-gray-600 hover:text-gray-500'>
+                Criar conta
+            </a>
+            </p>
             </div>
         </form>
         {error.status && <p>{error.message}</p>}

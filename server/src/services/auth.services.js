@@ -29,8 +29,18 @@ const signIn = async (userData) => {
 
 const me = (userId) => User.findById(userId);
 
+const buscarDatasLivres = async () => {
+    try {
+      const datasLivres = await Agendamento.find();
+      return datasLivres;
+    } catch (error) {
+      throw new Error('Erro ao buscar datas livres: ' + error.message);
+    }
+  };
+
 module.exports = {
     signUp,
     signIn,
     me,
+    buscarDatasLivres,
 }

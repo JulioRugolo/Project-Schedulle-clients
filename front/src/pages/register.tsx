@@ -81,8 +81,8 @@ const Register = () => {
             </button>
 
             <p className='mt-4 text-center'>
-            Already have an account?{' '}
-            <a href='#' className='font-medium text-gray-600 hover:text-gray-500'>
+            Já tem uma conta?{' '}
+            <a href='/login' className='font-medium text-gray-600 hover:text-gray-500'>
                 Login
             </a>
             </p>

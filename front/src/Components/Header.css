@@ -1,0 +1,66 @@
+header {
+    background-color: #333129;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.toogle {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap; /* Permite que os itens da navbar quebrem para a próxima linha */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        display: none;
+    }
+    .toogle {
+        display: flex;
+        zoom: 0.6;
+    }
+    .toogle button {
+        border-radius: 20px;
+    }
+    .buttonMobile {
+        zoom: 0.8;
+    }
+
+    .buttonClose {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+        padding: 5px 20px;
+    }
+
+    .toogleComponent {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        zoom: 2;
+        background-color: #333129;
+    }
+
+
+    .menuOpen {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        gap: 20px; /* Aumenta o espaçamento entre os itens */
+    }
+}
