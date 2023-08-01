@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header className="bg-gray-800 py-4">
@@ -6,16 +8,16 @@ const Header = () => {
         <nav className="flex flex-col md:flex-row">
           <ul className="flex items-center justify-between">
             <li>
-              <a href="/" className="text-white text-base md:text-xl font-semibold hover:text-gray-300">Home</a>
+              <Link href="/" className="text-white text-base md:text-xl font-semibold hover:text-gray-300">Home</Link>
             </li>
             <li>
-              <a href="/servicos" className="text-white text-base md:text-xl font-semibold hover:text-gray-300 ml-8">Serviços</a>
+              <Link href="/servicos" className="text-white text-base md:text-xl font-semibold hover:text-gray-300 ml-8">Serviços</Link>
             </li>
             <li>
-              <a href="/contato" className="text-white text-base md:text-xl font-semibold hover:text-gray-300 ml-8">Contato</a>
+              <Link href="/contato" className="text-white text-base md:text-xl font-semibold hover:text-gray-300 ml-8">Contato</Link>
             </li>
             <li>
-              <a href="/agenda" className="text-white text-base md:text-xl font-semibold hover:text-gray-300 ml-8">Agenda</a>
+              <Link href="/agenda" className="text-white text-base md:text-xl font-semibold hover:text-gray-300 ml-8">Agenda</Link>
             </li>
           </ul>
         </nav>

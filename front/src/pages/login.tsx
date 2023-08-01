@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const Login = () => {
@@ -83,9 +84,9 @@ const Login = () => {
             </button>
             <p className='mt-4 text-center'>
             Não tem uma conta?{' '}
-            <a href='/register' className='font-medium text-gray-600 hover:text-gray-500'>
+            <Link href='/register' className='font-medium text-gray-600 hover:text-gray-500'>
                 Criar conta
-            </a>
+            </Link>
             </p>
             </div>
         </form>

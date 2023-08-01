@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import Link from 'next/link';
 
 const Register = () => {
     const [userData, setUserData] = useState({
@@ -82,9 +83,9 @@ const Register = () => {
 
             <p className='mt-4 text-center'>
             Já tem uma conta?{' '}
-            <a href='/login' className='font-medium text-gray-600 hover:text-gray-500'>
+            <Link href='/login' className='font-medium text-gray-600 hover:text-gray-500'>
                 Login
-            </a>
+            </Link>
             </p>
 
             </div>
